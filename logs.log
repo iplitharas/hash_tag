@@ -1,0 +1,87 @@
+[2020-01-27 17:06:53,145:data_loader.py:86][DEBUG] >> Successfully created the folder: saves
+[2020-01-27 17:06:53,145:data_loader.py:87][DEBUG] >> Successfully created the folder: results
+[2020-01-27 17:06:57,655:helpers.py:13][DEBUG] >> Restoring checkpoint from:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\extracted_tokens.pickle
+[2020-01-27 17:06:57,656:data_loader.py:63][DEBUG] >> [Errno 2] No such file or directory: 'C:\\Users\\iplitharas\\OneDrive - Amadeus Workplace\\Desktop\\myPython\\hash_tag\\saves\\extracted_tokens.pickle'
+Parsing input files..
+[2020-01-27 17:06:57,656:logger.py:42][INFO] >> Calling parse_files
+[2020-01-27 17:06:57,855:logger.py:47][INFO] >> Called parse_files for 0.20s
+[2020-01-27 17:06:57,855:helpers.py:7][DEBUG] >> Creating checkpoint at: C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\extracted_tokens
+[2020-01-27 17:06:59,374:helpers.py:13][DEBUG] >> Restoring checkpoint from:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\extracted_tokens.pickle
+[2020-01-27 17:06:59,411:logger.py:42][INFO] >> Calling stem_words
+[2020-01-27 17:06:59,687:helpers.py:7][DEBUG] >> Creating checkpoint at: C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\LancasterStemmer
+[2020-01-27 17:06:59,695:helpers.py:20][DEBUG] >> Saving a json at:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\LancasterStemmer
+[2020-01-27 17:06:59,696:helpers.py:23][WARNING] >> Creating json from list with custom objects..
+[2020-01-27 17:06:59,737:logger.py:47][INFO] >> Called stem_words for 0.33s
+[2020-01-27 17:07:01,519:helpers.py:13][DEBUG] >> Restoring checkpoint from:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\extracted_tokens.pickle
+[2020-01-27 17:07:02,575:filter_pipeline.py:64][INFO] >> Successfully added the filter > filter_punctuation
+[2020-01-27 17:07:04,894:filter_pipeline.py:64][INFO] >> Successfully added the filter > filter_stop_words
+[2020-01-27 17:07:05,696:filter_pipeline.py:64][INFO] >> Successfully added the filter > filter_by_tag
+[2020-01-27 17:07:11,729:logger.py:42][INFO] >> Calling apply_filters
+[2020-01-27 17:07:11,730:filter_pipeline.py:72][DEBUG] >> Pipeline is > [<function filter_punctuation at 0x0000027D1710F438>, <function filter_stop_words at 0x0000027D298620D8>, <function filter_by_tag at 0x0000027D1711D3A8>]
+[2020-01-27 17:07:11,732:helpers.py:7][DEBUG] >> Creating checkpoint at: C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\filter_punctuation
+[2020-01-27 17:07:11,742:helpers.py:20][DEBUG] >> Saving a json at:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\filter_punctuation
+[2020-01-27 17:07:11,743:helpers.py:23][WARNING] >> Creating json from list with custom objects..
+[2020-01-27 17:07:11,784:filters.py:52][DEBUG] >> Stop_words are {'once', "you'd", 'into', "it's", 'out', 'no', 'their', 'from', 'again', 'my', 'how', 'with', 'until', 'each', 'won', 'they', "wasn't", 'the', "aren't", 'other', 'which', "didn't", 'mightn', 'his', 'and', 'me', 'o', 'haven', "don't", 'doesn', 'shouldn', 'are', 'did', 'an', 'am', "should've", 'through', 'weren', 'not', "shouldn't", 'same', 'what', "couldn't", 'needn', 'was', 'or', 'after', 'for', 'will', "weren't", 'himself', 'both', 'more', 'having', 'up', 've', 'if', 'here', 'yourself', 'against', 'on', 'ma', 'ain', 'don', 'do', 'these', 'can', 'those', 'about', 'while', 'him', 't', "shan't", "needn't", 'wouldn', 'ourselves', 'its', 'at', 'couldn', 'm', 'your', 'by', 'any', 'than', 'herself', "mustn't", 'shan', "you'll", 'too', 'doing', "doesn't", 'there', 'now', 'only', 'during', 'then', 'own', 'some', 're', 'were', 'aren', 'between', "you've", 'has', 'isn', 'she', 'where', 'll', 'so', 'hers', 'mustn', 'we', 'theirs', 'you', 'yours', 'above', 'that', 'further', 'just', 'to', 'down', 'does', 'themselves', 'who', 'nor', 'but', "mightn't", 'myself', 'been', 'd', 'ours', 'whom', 'such', "haven't", 'he', 'it', "that'll", 'why', 'hasn', 'had', "hadn't", 'being', 'most', 'below', 'all', 'a', 'before', "you're", 'under', "isn't", "wouldn't", 'is', 'of', 'over', 'have', 'as', 'very', 'hadn', "hasn't", 'i', 'this', 'when', "she's", 'off', 's', 'because', 'them', 'yourselves', 'wasn', 'her', 'our', 'should', 'didn', 'few', 'be', 'in', 'y', 'itself', "won't"}
+[2020-01-27 17:07:11,788:helpers.py:7][DEBUG] >> Creating checkpoint at: C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\filter_stop_words
+[2020-01-27 17:07:11,793:helpers.py:20][DEBUG] >> Saving a json at:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\filter_stop_words
+[2020-01-27 17:07:11,794:helpers.py:23][WARNING] >> Creating json from list with custom objects..
+[2020-01-27 17:07:12,882:helpers.py:7][DEBUG] >> Creating checkpoint at: C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\filter_by_tag
+[2020-01-27 17:07:12,885:helpers.py:20][DEBUG] >> Saving a json at:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\filter_by_tag
+[2020-01-27 17:07:12,885:helpers.py:23][WARNING] >> Creating json from list with custom objects..
+[2020-01-27 17:07:12,907:logger.py:47][INFO] >> Called apply_filters for 1.18s
+[2020-01-27 17:07:14,880:logger.py:42][INFO] >> Calling _count_words
+[2020-01-27 17:07:14,886:logger.py:42][INFO] >> Calling _find_common
+[2020-01-27 17:07:14,887:helpers.py:20][DEBUG] >> Saving a json at:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\results\common_words
+[2020-01-27 17:07:14,888:helpers.py:23][WARNING] >> Creating json from list with custom objects..
+[2020-01-27 17:07:14,888:helpers.py:26][WARNING] >> 'str' object has no attribute '__dict__'	Creating json from dict with custom objects..
+[2020-01-27 17:07:14,908:logger.py:47][INFO] >> Called _find_common for 0.02s
+[2020-01-27 17:07:14,908:logger.py:47][INFO] >> Called _count_words for 0.03s
+[2020-01-27 17:07:14,908:logger.py:42][INFO] >> Calling show_common
+[2020-01-27 17:07:14,908:logger.py:42][INFO] >> Calling _get_common
+[2020-01-27 17:07:14,908:logger.py:49][INFO] >> Called _get_common (is a generator)
+[2020-01-27 17:07:17,649:logger.py:47][INFO] >> Called show_common for 2.74s
+[2020-01-27 17:07:25,227:logger.py:42][INFO] >> Calling _count_words
+[2020-01-27 17:07:25,235:logger.py:42][INFO] >> Calling _find_common
+[2020-01-27 17:07:25,235:helpers.py:20][DEBUG] >> Saving a json at:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\results\common_words
+[2020-01-27 17:07:25,236:helpers.py:23][WARNING] >> Creating json from list with custom objects..
+[2020-01-27 17:07:25,236:helpers.py:26][WARNING] >> 'str' object has no attribute '__dict__'	Creating json from dict with custom objects..
+[2020-01-27 17:07:25,258:logger.py:47][INFO] >> Called _find_common for 0.02s
+[2020-01-27 17:07:25,258:logger.py:47][INFO] >> Called _count_words for 0.03s
+[2020-01-27 17:07:25,258:logger.py:42][INFO] >> Calling show_common
+[2020-01-27 17:07:25,258:logger.py:42][INFO] >> Calling _get_common
+[2020-01-27 17:07:25,258:logger.py:49][INFO] >> Called _get_common (is a generator)
+[2020-01-27 17:07:29,890:logger.py:47][INFO] >> Called show_common for 4.63s
+[2020-01-27 17:08:01,991:helpers.py:13][DEBUG] >> Restoring checkpoint from:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\extracted_tokens.pickle
+[2020-01-27 17:08:01,997:logger.py:42][INFO] >> Calling stem_words
+[2020-01-27 17:08:02,315:helpers.py:7][DEBUG] >> Creating checkpoint at: C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\PorterStemmer
+[2020-01-27 17:08:02,322:helpers.py:20][DEBUG] >> Saving a json at:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\PorterStemmer
+[2020-01-27 17:08:02,323:helpers.py:23][WARNING] >> Creating json from list with custom objects..
+[2020-01-27 17:08:02,361:logger.py:47][INFO] >> Called stem_words for 0.36s
+[2020-01-27 17:08:04,255:helpers.py:13][DEBUG] >> Restoring checkpoint from:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\extracted_tokens.pickle
+[2020-01-27 17:08:04,262:filter_pipeline.py:64][INFO] >> Successfully added the filter > filter_punctuation
+[2020-01-27 17:08:04,262:filter_pipeline.py:64][INFO] >> Successfully added the filter > filter_stop_words
+[2020-01-27 17:08:04,262:filter_pipeline.py:64][INFO] >> Successfully added the filter > filter_by_tag
+[2020-01-27 17:08:06,616:logger.py:42][INFO] >> Calling apply_filters
+[2020-01-27 17:08:06,616:filter_pipeline.py:72][DEBUG] >> Pipeline is > [<function filter_punctuation at 0x0000027D1710F438>, <function filter_stop_words at 0x0000027D298620D8>, <function filter_by_tag at 0x0000027D1711D3A8>]
+[2020-01-27 17:08:06,619:helpers.py:7][DEBUG] >> Creating checkpoint at: C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\filter_punctuation
+[2020-01-27 17:08:06,627:helpers.py:20][DEBUG] >> Saving a json at:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\filter_punctuation
+[2020-01-27 17:08:06,627:helpers.py:23][WARNING] >> Creating json from list with custom objects..
+[2020-01-27 17:08:06,663:filters.py:52][DEBUG] >> Stop_words are {'once', "you'd", 'into', "it's", 'out', 'no', 'their', 'from', 'again', 'my', 'how', 'with', 'until', 'each', 'won', 'they', "wasn't", 'the', "aren't", 'other', 'which', "didn't", 'mightn', 'his', 'and', 'me', 'o', 'haven', "don't", 'doesn', 'shouldn', 'are', 'did', 'an', 'am', "should've", 'through', 'weren', 'not', "shouldn't", 'same', 'what', "couldn't", 'needn', 'was', 'or', 'after', 'for', 'will', "weren't", 'himself', 'both', 'more', 'having', 'up', 've', 'if', 'here', 'yourself', 'against', 'on', 'ma', 'ain', 'don', 'do', 'these', 'can', 'those', 'about', 'while', 'him', 't', "shan't", "needn't", 'wouldn', 'ourselves', 'its', 'at', 'couldn', 'm', 'your', 'by', 'any', 'than', 'herself', "mustn't", 'shan', "you'll", 'too', 'doing', "doesn't", 'there', 'now', 'only', 'during', 'then', 'own', 'some', 're', 'were', 'aren', 'between', "you've", 'has', 'isn', 'she', 'where', 'll', 'so', 'hers', 'mustn', 'we', 'theirs', 'you', 'yours', 'above', 'that', 'further', 'just', 'to', 'down', 'does', 'themselves', 'who', 'nor', 'but', "mightn't", 'myself', 'been', 'd', 'ours', 'whom', 'such', "haven't", 'he', 'it', "that'll", 'why', 'hasn', 'had', "hadn't", 'being', 'most', 'below', 'all', 'a', 'before', "you're", 'under', "isn't", "wouldn't", 'is', 'of', 'over', 'have', 'as', 'very', 'hadn', "hasn't", 'i', 'this', 'when', "she's", 'off', 's', 'because', 'them', 'yourselves', 'wasn', 'her', 'our', 'should', 'didn', 'few', 'be', 'in', 'y', 'itself', "won't"}
+[2020-01-27 17:08:06,667:helpers.py:7][DEBUG] >> Creating checkpoint at: C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\filter_stop_words
+[2020-01-27 17:08:06,670:helpers.py:20][DEBUG] >> Saving a json at:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\filter_stop_words
+[2020-01-27 17:08:06,670:helpers.py:23][WARNING] >> Creating json from list with custom objects..
+[2020-01-27 17:08:07,662:helpers.py:7][DEBUG] >> Creating checkpoint at: C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\filter_by_tag
+[2020-01-27 17:08:07,665:helpers.py:20][DEBUG] >> Saving a json at:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\saves\filter_by_tag
+[2020-01-27 17:08:07,665:helpers.py:23][WARNING] >> Creating json from list with custom objects..
+[2020-01-27 17:08:07,685:logger.py:47][INFO] >> Called apply_filters for 1.07s
+[2020-01-27 17:08:08,265:logger.py:42][INFO] >> Calling _count_words
+[2020-01-27 17:08:08,275:logger.py:42][INFO] >> Calling _find_common
+[2020-01-27 17:08:08,276:helpers.py:20][DEBUG] >> Saving a json at:C:\Users\iplitharas\OneDrive - Amadeus Workplace\Desktop\myPython\hash_tag\results\common_words
+[2020-01-27 17:08:08,276:helpers.py:23][WARNING] >> Creating json from list with custom objects..
+[2020-01-27 17:08:08,277:helpers.py:26][WARNING] >> 'str' object has no attribute '__dict__'	Creating json from dict with custom objects..
+[2020-01-27 17:08:08,311:logger.py:47][INFO] >> Called _find_common for 0.04s
+[2020-01-27 17:08:08,312:logger.py:47][INFO] >> Called _count_words for 0.05s
+[2020-01-27 17:08:08,312:logger.py:42][INFO] >> Calling show_common
+[2020-01-27 17:08:08,312:logger.py:42][INFO] >> Calling _get_common
+[2020-01-27 17:08:08,312:logger.py:49][INFO] >> Called _get_common (is a generator)
+[2020-01-27 17:08:12,871:logger.py:47][INFO] >> Called show_common for 4.56s
