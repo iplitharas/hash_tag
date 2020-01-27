@@ -120,7 +120,7 @@ I need to check it again.
 > The top_k variable fetch only a portion of them
 
 >An example of execution without any stemming algorithm and filter
-> commands -> parse , show
+> commands, parse -> show
 <img src="./readme_pictures/wrong_output.png" alt="Main app" style="width:500px;height:300px;">
 >with the default settings
 > parse -> stem -> filters -> show
