@@ -129,7 +129,7 @@ I need to check it again.
 >different outputs.
 
 Finally all the results are stored in the directory results as a csv
-with format: Word,#counter,line/s,document/s
+with format: Words,counter,line/s,document/s
 
 
 
