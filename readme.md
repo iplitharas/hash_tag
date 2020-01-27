@@ -89,15 +89,56 @@ I need to check it again.
 
 
 ## Usage
-Run the main application python app.py,
-at the begging it will download all the necessarily packages from nltk.
-Where typing help we have a list with all possible commands.
+>Run the main application python app.py,
+>at the begging it will download all the necessarily packages from nltk.
+>Where typing help we have a list with all possible commands.
 
-if you execute with this order
-parse -> stem -> add or add_all -> apply -> show
-the final result it would be like this
+<img src="./readme_pictures/app_help.jpg" alt="Main app" style="width:500px;height:300px;">
 
-<img src="./readme_pictures/final_results.jpg" alt="Main app" style="width:500px;height:300px;">
+>We can print the default settings,
+>as a default value of the common criterion = 6 (all the input files)
+>but we can decrease it,the logic for common is : each word is considered
+>as a common word in files, if the number of files where this
+<word exists >= criterion
+
+<img src="./readme_pictures/settings.jpg" alt="Main app" style="width:500px;height:300px;">
+
+>after setting the desired stemming algorithm we can add the filters
+>or select add_all
+
+<img src="./readme_pictures/add_filter.png" alt="Main app" style="width:500px;height:300px;">
+
+>We execute the pipeline with the command apply,
+>and then before calculate the final results we can configure
+>the criterion and/or the top_k.
+
+>with the command show, we calculate the final results.
+>The result's after the counting for the requested criterion
+>are stored in a json file.
+<img src="./readme_pictures/results_json.jpg" alt="Main app" style="width:500px;height:300px;">
+
+> The top_k variable fetch only a portion of them
+
+>An example of execution without any stemming algorithm and filter
+> commands -> parse , show
+<img src="./readme_pictures/wrong_output.png" alt="Main app" style="width:500px;height:300px;">
+>with the default settings
+> parse -> stem -> filters -> show
+<img src="./readme_pictures/right_output.png" alt="Main app" style="width:500px;height:300px;">
+
+>Also we can restore the state after a specific filter to request
+>different outputs.
+
+Finally all the results are stored in the directory results as a csv
+with format: Words,#counter,line/s,document/s
+
+
+
+
+
+
+
+
 
 
 

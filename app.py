@@ -23,7 +23,7 @@ class HastTagApp(cmd.Cmd):
         self.common_words = None
         self.data_loader = DataLoader(input_files_path="data")
         self.vocabulary = "english"
-        self.common_criterion = 2
+        self.common_criterion = 6
         self.top_k = 10
         self.results_file_name = "results"
         self.tags = ["NNS", "NN"]
