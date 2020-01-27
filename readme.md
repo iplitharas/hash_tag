@@ -99,7 +99,7 @@ I need to check it again.
 >as a default value of the common criterion = 6 (all the input files)
 >but we can decrease it,the logic for common is : each word is considered
 >as a common word in files, if the number of files where this
-<word exists >= criterion
+>word exists >= criterion
 
 <img src="./readme_pictures/settings.jpg" alt="Main app" style="width:500px;height:300px;">
 
@@ -117,7 +117,7 @@ I need to check it again.
 >are stored in a json file.
 <img src="./readme_pictures/results_json.jpg" alt="Main app" style="width:500px;height:300px;">
 
-> The top_k variable fetch only a portion of them
+> With the top_k variable we fetch only a portion of them
 
 >An example of execution without any stemming algorithm and filter
 > commands, parse -> show
