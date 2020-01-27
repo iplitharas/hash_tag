@@ -19,12 +19,12 @@ def stem_words(data: List[FileLine], vocabulary: str, stemmer: str, saves_dir: s
     """
     Stem words using nltk PorterStemmer or LancasterStemmer for english language only
     """
-    english_stammer_driver = {"porter": PorterStemmer,
+    english_stemmer_driver = {"porter": PorterStemmer,
                               "lancaster": LancasterStemmer}
 
     if vocabulary.lower() == "english":
         try:
-            stemmer_obj = english_stammer_driver[stemmer.lower()]()
+            stemmer_obj = english_stemmer_driver[stemmer.lower()]()
             for line in data:
                 line.words = [stemmer_obj.stem(word) for word in line.words]
 
