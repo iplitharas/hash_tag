@@ -113,12 +113,12 @@ class CalculateCommonWords:
         ax.set_xticks(x)
         ax.tick_params(axis='both', which='major', labelsize=7)
         ax.set_xticklabels(words)
-        title = f"top {top_k} #hashtags"
+        title = f"top {top_k} #hashtags for #{self.criterion} input files"
         plt.title(title)
 
         # create a data frame for the csv
         df = pd.DataFrame(list(zip(words, occurrences, lines, documents)),
-                          columns=["Words", "#counter", "lines", "document"])
+                          columns=["Words", "#counter", "line/s", "document/s"])
 
         # create the final file_name
         file_name = f"{file_name}-topk={top_k}-criterion={self.criterion}"

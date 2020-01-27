@@ -91,13 +91,13 @@ I need to check it again.
 ## Usage
 >Run the main application python app.py,
 >at the begging it will download all the necessarily packages from nltk.
->Where typing help we have a list with all possible commands.
+>Where with typing help we have a list with all possible commands.
 
 <img src="./readme_pictures/app_help.jpg" alt="Main app" style="width:500px;height:300px;">
 
 >We can print the default settings,
->as a default value of the common criterion = 6 (all the input files)
->but we can decrease it,the logic for common is : each word is considered
+>The default value of the common criterion = 6 (all the input files)
+>but we can decrease it,the logic for common is: each word is considered
 >as a common word in files, if the number of files where this
 >word exists >= criterion
 
