@@ -12,8 +12,8 @@ to extract the word tokens, apply stemming in each word
 using the Porter or Lancaster stemmer algorithms,
 apply some custom filters and also a tagging filter with the help again
 from nltk, and finally, in the end, it calculates the most common words
-and saves/plots the results in a bar chart. The user can decide
-the order of "filtering" and "stemming" the word tokens in this pipeline
+and saves/plots the results in a bar chart/csv file. The user can decide
+the order of "filtering" and "stemming" of the word tokens in this pipeline
 
 
 ## Installation
@@ -116,7 +116,7 @@ I need to check it again.
 >are stored in a json file.
 <img src="./readme_pictures/results_json.jpg" alt="Main app" style="width:500px;height:300px;">
 
-> With the top_k variable we fetch only a portion of them
+>With the top_k variable we fetch only a portion of them
 
 >An example of execution without any stemming algorithm and filter
 > commands, parse -> show
@@ -129,7 +129,7 @@ I need to check it again.
 >different outputs.
 
 Finally all the results are stored in the directory results as a csv
-with format: Words,#counter,line/s,document/s
+with format: Word,#counter,line/s,document/s
 
 
 

@@ -118,7 +118,7 @@ class CalculateCommonWords:
 
         # create a data frame for the csv
         df = pd.DataFrame(list(zip(words, occurrences, lines, documents)),
-                          columns=["Words", "#counter", "line/s", "document/s"])
+                          columns=["Word", "#counter", "line/s", "document/s"])
 
         # create the final file_name
         file_name = f"{file_name}-topk={top_k}-criterion={self.criterion}"
