@@ -20,9 +20,8 @@ the order of "filtering" and "stemming" the word tokens in this pipeline
 - create a new env or use the tags_env and install the requirements.
 python 3.6 and above
 >1. python -m pip install --upgrade pip
->3. python -m venv env_name
->4. or source tags_env/bin/activate
->5. pip install -r requirements.txt
+>2. python -m venv env_name
+>3. pip install -r requirements.txt
 
 ## Running the tests
 > python -m unittest tests/test_name
